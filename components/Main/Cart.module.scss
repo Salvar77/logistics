@@ -1,0 +1,37 @@
+@import "../../styles/colors";
+
+.cart {
+  max-width: 1200px;
+  margin: 0 auto;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+
+    &One,
+    &Two {
+      text-align: center;
+      padding: 2rem;
+      border: 2px solid black;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .cart {
+    &__box {
+      flex-direction: row;
+
+      &One,
+      &Two {
+        flex-basis: 40%;
+        width: 100%;
+      }
+    }
+  }
+}

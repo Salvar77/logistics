@@ -1,0 +1,48 @@
+@import "../../styles/colors";
+
+.hero {
+  &__img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat, no-repeat;
+    }
+  }
+
+  &__main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: large;
+    color: $white-smooth;
+
+    h1 {
+      font-size: 2.2rem;
+      padding: 1rem;
+    }
+
+    p {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    &Link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: $white-smooth;
+      border: 2px solid $white-smooth;
+      background-color: $dark-smooth;
+      padding: 0.6rem;
+    }
+  }
+}

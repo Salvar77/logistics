@@ -1,0 +1,45 @@
+@import "../../styles/colors";
+
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    // flex-wrap: wrap;
+  }
+
+  &__info {
+    padding: 1rem;
+    border: 2px solid black;
+    width: 100%;
+
+    p {
+      font-weight: bold;
+      margin: 1rem;
+      text-align: center;
+    }
+  }
+
+  &__input {
+    padding: 1rem;
+    // margin-bottom: 1rem;
+    border: 2px solid black;
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    &__box {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+}

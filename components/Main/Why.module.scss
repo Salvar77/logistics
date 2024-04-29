@@ -1,0 +1,64 @@
+@import "../../styles/colors";
+
+.why {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $grey-smooth;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__img {
+    order: 1;
+    padding: 2rem;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__main {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+
+    p {
+      max-width: 100%;
+      padding: 2rem;
+      font-weight: bold;
+      word-break: break-word;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 1rem;
+    border: 2px solid black;
+    margin-bottom: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .why {
+    &__box {
+      flex-direction: row;
+    }
+
+    &__img {
+      width: 100%;
+      order: 2;
+    }
+
+    &__main {
+      width: 100%;
+      order: 1;
+    }
+  }
+}

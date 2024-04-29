@@ -1,0 +1,63 @@
+.logistik {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+
+    &One,
+    &Two,
+    &Three {
+      text-align: center;
+      border: 2px solid black;
+      width: 100%;
+      padding: 1rem;
+      //   flex-basis: 100%;
+
+      h1 {
+        font-weight: bold;
+        font-size: large;
+      }
+
+      p {
+        margin: 1rem;
+        font-size: large;
+      }
+
+      button {
+        padding: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .logistik__box {
+    &One,
+    &Two,
+    &Three {
+      flex-basis: 50%; // Połowa szerokości dla ekranów od 576px
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .logistik {
+    &__box {
+      flex-direction: row;
+
+      &One,
+      &Two,
+      &Three {
+        flex-basis: 20%; // Po trzeciej części dla dużych ekranów
+      }
+    }
+  }
+}

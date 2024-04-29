@@ -1,0 +1,41 @@
+@import "../../styles/colors";
+
+.jerycho {
+  max-width: 1200px;
+  margin: 0 auto;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+
+    &One,
+    &Two,
+    &Three {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      border: 4px solid black;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .jerycho {
+    &__box {
+      flex-direction: row;
+      &One,
+      &Two,
+      &Three {
+        flex-basis: 45%;
+        //   width: 100%;
+      }
+    }
+  }
+}
